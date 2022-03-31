@@ -1,19 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './OrderDetails.css'
-import { faArrowAltCircleRight, faArrowRight, faDeleteLeft, faDrumSteelpan, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const OrderDetails = (props) => {
     const cart = props.cart
     localStorage.setItem('product' ,JSON.stringify(cart))
     return (
-        <div>
-            <h2>Order Summary </h2>
-
-            <p>Seleted Items: {cart.length}</p>
-            <p>Total Price: $ </p>
-            <p>Total Shipping Charge: $</p>
-            <p></p>
+        <div >
+            <div className='order-details'>
+                <h2>Order Summary </h2>
+                <p>Seleted Items: {cart.length}</p>
+                <p>Total Price: $ </p>
+                <p>Total Shipping Charge: $</p>
+                <h4>Grand Total: $</h4>
+                <p></p>
+            </div>
             <div>
                 <button className='delete-btn'>
                 <p className='buttonText'>Clear Item</p>
