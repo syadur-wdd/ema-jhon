@@ -1,0 +1,23 @@
+.shop-container{
+    background-color: rgb(214, 214, 214);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.producr-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px 100px;
+}
+
+@media screen and (max-width:1100px) {
+    .producr-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.cart-container{
+    background-color: rgb(57, 68, 8);
+    color: azure;
+}
