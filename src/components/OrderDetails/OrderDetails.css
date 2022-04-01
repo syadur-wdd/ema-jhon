@@ -1,5 +1,10 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+
 .delete-btn{
-    background-color: #FF3030;
+    background-color: #f6ba04;
     font-size: 17px;
     height: 48px;
     width: 232px;
@@ -13,7 +18,7 @@
 }
 
 .review-btn{
-    background-color: #FF9900;
+    background-color: #04549a;
     font-size: 17px;
     height: 48px;
     width: 232px;
@@ -34,4 +39,8 @@
 }
 .order-details{
     padding-left: 30px;
+    padding-top: 30px;
+}
+.order-details h2{
+    padding-bottom: 30px;
 }
